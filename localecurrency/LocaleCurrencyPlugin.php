@@ -24,6 +24,11 @@ class LocaleCurrencyPlugin extends BasePlugin
         return 'http://www.vangenplotz.no';
     }
 
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/KnutSv/craft-locale-currency/blob/master/README.md';
+    }
+
     public function addTwigExtension()  
     {
         Craft::import('plugins.localecurrency.twigextensions.LocaleCurrencyTwigExtension');
